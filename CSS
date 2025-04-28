@@ -1,0 +1,136 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* About Section */
+#about {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Projects Section */
+#projects {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+#projects h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 250px;
+  margin: 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: block; /* Make the whole card clickable */
+  text-decoration: none; /* Remove default link underline */
+  color: #333; /* Set default text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+/* Ensure the text color inside the card stays visible */
+.project-card h3, .project-card p {
+  color: inherit; /* Ensure the text color is inherited from the card */
+}
+
+/* Contact Section */
+#contact {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#contact a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Responsive: Stack project cards on smaller screens */
+@media screen and (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
